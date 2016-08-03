@@ -10,6 +10,7 @@ gulp
 bower
 sass
 babel (for ES2015)
+browsersync
 d3 4.2.0
 AngularJS 1.5.8
 Angular Material 1.1 (For its sweet flex layout system)
