@@ -1,0 +1,29 @@
+{
+  "name": "www",
+  "version": "1.0.0",
+  "description": "Jeff Sweeney's Personal Site",
+  "dependencies": {
+    "express": "~4.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.9.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-if": "^2.0.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/codegoblins/www"
+  },
+  "author": "Jeff Sweeney",
+  "license": "ISC"
+}
