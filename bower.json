@@ -1,0 +1,22 @@
+{
+  "name": "www",
+  "description": "Jeff Sweeney's Personal Site",
+  "main": "",
+  "authors": [
+    "Jeff Sweeney"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/codegoblins/www",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "^4.2.0",
+    "angular": "^1.5.8"
+  }
+}
