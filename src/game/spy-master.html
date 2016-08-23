@@ -1,0 +1,14 @@
+<div class="banner bg-blue">
+	<div class="centered">
+		<div layout="row">
+			<input flex="70" type="text" class="sm-input" ng-model="masterCode" placeholder="Spymaster Code">
+			<a class="sm-play" flex ng-click="loadGame()">Play</a>
+		</div>
+		<br>
+		<div class="alert" ng-if="error">{{ error }}</div>
+
+		<div ng-repeat="row in master.rows">
+			<div ng-repeat="column in row" class="master-dot bg-{{ column.team }}"></div>
+		</div>
+	</div>
+</div>
