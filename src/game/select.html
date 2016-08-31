@@ -1,10 +1,14 @@
-<div header></div>
-
-<div class="centered">
-	<h1><strong>Choose a Mode for this Device</strong></h1>
-
-	<div layout="column">
-		<a flex="100" ui-sref="app.game-board" class="bg-red mode-select">Game Board</a>
-		<a flex="100" ui-sref="app.spy-master" class="bg-blue md-raised mode-select">Spy Master</a>
+<div class="gameend-banner banner bg-grey">
+	<div class="banner-content">
+		<h1>Choose a Mode for this Device</h1>
+		<div class="button-row">
+			<a ui-sref="app.game-board" class="bg-red sm-play">Game Board</a>
+			<a ui-sref="app.spy-master" class="bg-blue sm-play">Spy Master</a>
+		</div>
+		<div class="button-row">
+			<a ui-sref="app.instructions" class="bg-grey sm-play">How to Play</a>	
+		</div>
 	</div>
+
 </div>
+

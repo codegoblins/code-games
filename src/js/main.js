@@ -3,20 +3,18 @@ import {MasterGrid} from 'game';
 import {Theme} from 'theme';
 
 (function() {
-	let app = angular.module('CodeGoblins', ['ui.router', 'ngMaterial']);
+	let app = angular.module('CodeGoblins', ['ui.router']);
 
-	app.config(($stateProvider, $urlRouterProvider, $mdThemingProvider) => {
-
-		Theme.configure($mdThemingProvider);
+	app.config(($stateProvider, $urlRouterProvider) => {
 		
 		$urlRouterProvider.otherwise('/');
 
 		$stateProvider.state('app', {
 			abstract: true,
 			views: {
-				// 'footer': {
-				// 	templateUrl: 'game/footer.html'
-				// }
+				'footer': {
+					templateUrl: 'game/footer.html'
+				}
 			}
 		})
 		.state('app.select', {
@@ -44,6 +42,14 @@ import {Theme} from 'theme';
 					controller: GameController
 				}
 			}
+		})
+		.state('app.instructions', {
+			url: '/instructions',
+			views: {
+				'content@': {
+					templateUrl: 'game/instructions.html'
+				}
+			}
 		});
 	});
 
@@ -67,15 +73,23 @@ class GameController {
 
 class SpyMasterController {
 	constructor($scope) {
-		$scope.masterCode = '';
-		$scope.error = '';
-
 		$scope.loadGame = () => {
 			$scope.error = '';
 			$scope.master = new MasterGrid($scope.masterCode);
 			if (!$scope.master.valid) {
 				$scope.error = 'Invalid Game Code';
+			} else {
+				$scope.initialized = true;
 			}
 		}
+
+		$scope.newGame = () => {
+			$scope.master = null;
+			$scope.masterCode = '';
+			$scope.error = '';
+			$scope.initialized = false;
+		}
+
+		$scope.newGame();
 	}
 }
