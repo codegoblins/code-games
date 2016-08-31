@@ -1,4 +1,4 @@
-import {words as list_of_words}	 from '../data/words';
+import {words as list_of_words} from '../data/words';
 
 const total_grid_items = 25;
 const grid_height = 5;
