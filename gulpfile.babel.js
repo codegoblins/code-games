@@ -42,6 +42,7 @@ gulp.task('watch', () => {
 	gulp.watch('src/stylesheets/sass/*.scss', ['browsersync-reload']);
 	gulp.watch('src/js/*.js', ['browsersync-reload']);
 	gulp.watch('src/game/*.html', ['templates']);
+	gulp.watch('src/index.html', ['browsersync-reload']);
 });
 
 gulp.task('build-site', ['useref']);
@@ -108,5 +109,4 @@ gulp.task('useref', ['sass', 'minify-js', 'templates', 'resources'], () => {
 		.pipe(gulpIf('*.js', uglify()))
 		.pipe(gulpIf('*.css', cssnano()))
 		.pipe(gulp.dest('dist'));
-	
 });

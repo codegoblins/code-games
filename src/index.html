@@ -3,15 +3,14 @@
 <head>
 	<title>Code Goblins</title>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="HandheldFriendly" content="true">
+
 	<!--build:css css/styles.min.css-->
-	<!-- bower:css -->
 	<link rel="stylesheet" type="text/css" href="../dist/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="../dist/css/main.css">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Arimo">
-	<!-- endbower -->
 	<!--endbuild-->
-
-	 <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
 </head>
 
 <body ng-app="CodeGoblins">
@@ -21,15 +20,10 @@
 <footer ui-view="footer"></footer>
 
 </body>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
 
 	<!--build:js js/main.min.js-->
+	<script type="text/javascript" src="../bower_components/angular/angular.min.js"></script>
 	<script type="text/javascript" src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-
 	<script type="text/javascript" src="../dist/js/main.pack.js"></script>
 	<!--endbuild-->
 </html>
