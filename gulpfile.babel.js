@@ -103,7 +103,7 @@ gulp.task('useref:dev', ['sass', 'pack-js', 'templates', 'resources'], () => {
 		.pipe(gulp.dest('dist'));
 });
 
-gulp.task('useref', ['sass', 'minify-js', 'templates', 'resources'], () => {
+gulp.task('useref', ['sass', 'pack-js', 'templates', 'resources'], () => {
 	gulp.src('src/index.html')
 		.pipe(useref())
 		.pipe(gulpIf('*.js', uglify()))
