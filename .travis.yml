@@ -4,6 +4,9 @@ node_js:
 branches:
   only:
     - master
+env:
+  global:
+    - secure: "B/5w69OnN1FIZZFXA2bVMlOCBzRcqTStbLrWx6y0/seubKuUA/TMmrPv3u0MkZ+6m2Vxi7axHrLgQ3q2pnWmowJDOOAL96c74DNl6Lb3KSC9YaEEYf6vXMwi26+gKDcmXzh7PoTfrvo5HVeAeti/nB8LwCZlX/toLOT0geybbui09CrxyL2PetMmm2FQem6Js9OTJL0yapgcM1qGgMtE2ir5AnHAMv3CuF4cplUNFv6uM0xlBkNVFks8iJ3g4bnWcRmP0W63YQRk58Mjoltuz9R9jvl0wGwtRzDK2IURnuMn9JTmrdtXtuqrclmlS7IEORXGm+GT6mWkyT8ruvvZX/h5g6cvbS2EKOZxcM5dk6MEfSZqb+033eAJ9O2EV3lwX8oTZ5BaLrQyOebsgJctJPPr1dt+8hyY2j0LDHOsN52tdgiLerc7bB8JlZbQKzjiP0qr9Su8WxhA/mvYG5y2Y0TbGxqzHCBDkuUjIx545nlI0QZHwHI9RXGJEIy/DHPuPtCeoh7mKNHohjelF2ZVgFgGx0W9kvw+G1yHvh1nUDgq/d7YC+dTFVcXrSIRAXcF9sLv2Yd4AFHqsrkNw/EoubUqUzwwbsRY72XgQzqfj+xxR1LQFhjt9DOWQInOsScToW4vrsjuIB74ZTp8AJUB8q03D3e8SdstwxryXfNzomo="
 
 script:
   - ./node_modules/.bin/bower install
