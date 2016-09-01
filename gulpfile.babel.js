@@ -64,7 +64,7 @@ gulp.task('pack-js', () => {
 		module: {
 			loaders: [
 			{
-				test: /\.js$/, 
+				test: /\.js$/,
 				exclude: /node_modules/,
 				loaders: ['babel-loader']
 			},
