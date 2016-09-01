@@ -8,6 +8,7 @@ branches:
 script:
   - git config credential.helper "$PWD/node_modules/.bin/git-credential-env --username=GITHUB_TOKEN"
   - git config user.name "Travis CI"
+  - ./node_modules/.bin/bower install
   - npm run deploy
 
 notifications:
