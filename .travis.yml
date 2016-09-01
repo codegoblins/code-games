@@ -4,9 +4,6 @@ node_js:
 branches:
   only:
     - master
-env:
-  global:
-    - secure: "ar0ZAE2HtEKfOER4nCRUx2W6bNMPaBT5vwhoIh64vZ1wnd/Fl631YKRtrS1+fMSyC03TLiDV/enuv1mUFwZb7X57XcuupoQ/119NTdU24Pa8xxUwQxY9cj28xyFd6rH67Cg7WiWco9LIyqKxdQziNkkex1VvmcUbrRD/Qgh0g4D0Yem/DQxgQhraAhsKm8YmJhZZlNKlIh1SEq05zi7c/jbERN7HmW5q5+hOa0XZUx7raX++PbcWdQREygQIFGJINyc1CAV7/MlKU+a8vrjJyjARPyxpTULHdlPTZvWZOUHueUcCBqNYh3G481h2TclzjqjhEvdXXQ/uLnW69HeJlSkwzsJIgyYuzagk0JHFTABvCwbDGvSWIB6Tuimgri0FOsU4Dm25Ks46wmmPVdQlOQ1ql0jMHbAB8SWAc8b9WhkxElvyjrYDzk4GjzfQpvEZJEKCTJIoJlBi9nyTq82Y/BkfFeEiZFE39h0v4tBd4repoBYtpDhNZSSZCks46CuB5j5ibm8IbMBE2/JXvhOHcdHUc8dC9KQqH3mzljoDDcPUpp+sZ7EvOnf9H9iBZ884yQYvX7VHNgx3d1PIrv/2TErt9fcUtNpjduI8MMfYo5ZTT3Rib4Yw9TJlZDrjjlbrGkyk2symxLYEmczCQQlTSrCbKhPIytqVaMcjgC7AoS4="
 
 script:
   - git config credential.helper "$PWD/node_modules/.bin/git-credential-env --username=GITHUB_TOKEN"
