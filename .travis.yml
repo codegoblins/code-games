@@ -1,16 +1,15 @@
 language: node_js
 node_js:
   - 6.4.0
-#branches:
-#  only:
-#    - master
+branches:
+  only:
+    - master
 
 script:
+  - ./node_modules/.bin/bower install
   - git config credential.helper "$PWD/node_modules/.bin/git-credential-env --username=GITHUB_TOKEN"
   - git config user.name "Travis CI"
-  - ./node_modules/.bin/bower install
-  - ./node_modules/.bin/gulp build-site
-  - ./node_modules/.bin/push-dir --dir dist --branch gh-pages --cleanup
+  - npm run deploy
 
 notifications:
   email:
