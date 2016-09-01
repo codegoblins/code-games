@@ -9,7 +9,8 @@ script:
   - git config credential.helper "$PWD/node_modules/.bin/git-credential-env --username=GITHUB_TOKEN"
   - git config user.name "Travis CI"
   - ./node_modules/.bin/bower install
-  - npm run deploy
+  - ./node_modules/.bin/gulp build-site
+  - ./node_modules/.bin/push-dir --dir dist --branch gh-pages --cleanup
 
 notifications:
   email:
