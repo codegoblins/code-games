@@ -92,18 +92,18 @@ gulp.task('templates', () => {
 	gulp.start('browsersync-reload');
 });
 
-gulp.task('resources', () => {
-	gulp.src('src/img/*')
-		.pipe(gulp.dest('dist/img'));
+gulp.task('static', () => {
+  gulp.src('src/static/*')
+    .pipe(gulp.dest('dist'));
 });
 
-gulp.task('useref:dev', ['sass', 'pack-js', 'templates', 'resources'], () => {
+gulp.task('useref:dev', ['sass', 'pack-js', 'templates', 'static'], () => {
 	gulp.src('src/index.html')
 		.pipe(useref())
 		.pipe(gulp.dest('dist'));
 });
 
-gulp.task('useref', ['sass', 'pack-js', 'templates', 'resources'], () => {
+gulp.task('useref', ['sass', 'pack-js', 'templates', 'static'], () => {
 	gulp.src('src/index.html')
 		.pipe(useref())
 		.pipe(gulpIf('*.js', uglify()))
