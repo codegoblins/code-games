@@ -1,9 +1,9 @@
 language: node_js
 node_js:
   - 6.4.0
-branches:
-  only:
-    - master
+#branches:
+#  only:
+#    - master
 
 script:
   - git config credential.helper "$PWD/node_modules/.bin/git-credential-env --username=GITHUB_TOKEN"
