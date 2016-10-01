@@ -1,8 +1,8 @@
-## Jeff's Personal Site
+## Code Games
 
-I haven't had the chance to create a project from scratch using a bunch of cool technologies at once in a while, so here I go.
+I built my favorite board game as a mobile friendly web application to play on the go. The idea was to be able to play while I was at the PAX expo hall, where there is usually little to no cell service. I designed the app to run on two phones, with no backend needed for multiplayer. I have hosted the game on my website, [codegoblins](http://codegoblins.com). Check out my sweet solution for encoding the board!
 
-I will be using the following:
+I used the following frameworks/tools:
 
 ```
 npm
@@ -11,9 +11,8 @@ bower
 sass
 babel (for ES2015)
 browsersync
-d3 4.2.0
 AngularJS 1.5.8
-Angular Material 1.1 (For its sweet flex layout system)
+Angular UI
 ```
 
 ## Building the site
